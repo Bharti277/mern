@@ -47,65 +47,61 @@ const Register = () => {
     }
   };
   return (
-    <div>
-      <div className="wrapper signUp">
-        <div className="form">
-          <div className="heading">CREATE AN ACCOUNT</div>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="username">Username</label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Enter your username"
-                value={user.username}
-                onChange={handleInput}
-              />
-            </div>
-            <div>
-              <label htmlFor="email">EMail</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Enter your mail"
-                value={user.email}
-                onChange={handleInput}
-              />
-            </div>
-            <div>
-              <label htmlFor="phone">Phone</label>
-              <input
-                type="phone"
-                id="phone"
-                name="phone"
-                placeholder="Enter you phone"
-                value={user.phone}
-                onChange={handleInput}
-              />
-            </div>
-            <div>
-              <label htmlFor="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Enter you password"
-                value={user.password}
-                onChange={handleInput}
-              />
-            </div>
-            <button type="submit">Submit</button>
-            <h2 align="center" className="or">
-              OR
-            </h2>
-          </form>
-          <p>
-            Have an account ? <NavLink to="/login"> Login </NavLink>
-          </p>
+    <div className="form">
+      <div className="heading">CREATE AN ACCOUNT</div>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            value={user.username}
+            onChange={handleInput}
+          />
         </div>
-      </div>
+        <div>
+          <label htmlFor="email">EMail</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your mail"
+            value={user.email}
+            onChange={handleInput}
+          />
+        </div>
+        <div>
+          <label htmlFor="phone">Phone</label>
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            placeholder="Enter you phone"
+            value={user.phone}
+            onChange={handleInput}
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter you password"
+            value={user.password}
+            onChange={handleInput}
+          />
+        </div>
+        <button type="submit">Submit</button>
+        <h2 align="center" className="or">
+          OR
+        </h2>
+      </form>
+      <p className="login-link">
+        Have an account ? <NavLink to="/login"> Login </NavLink>
+      </p>
     </div>
   );
 };

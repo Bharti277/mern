@@ -1,0 +1,5 @@
+.home {
+  display: flex;
+  place-content: center;
+  margin-top: 4rem;
+}

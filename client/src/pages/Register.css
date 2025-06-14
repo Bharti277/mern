@@ -2,10 +2,11 @@
   max-height: 500px;
   width: auto;
 }
+.register-home {
+  width: 100%;
+}
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
   -webkit-box-align: center;
@@ -63,39 +64,6 @@
   border-radius: 8px;
 }
 
-@media (min-width: 542px) {
-  .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    padding: 1.5rem;
-    max-width: 1100px;
-  }
-  .form {
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-  }
-  .form input {
-    width: 250px;
-  }
-  .illustration img {
-    max-width: 80%;
-    height: auto;
-  }
-}
-
-@media (max-width: 680px) {
-  .illustration {
-    display: none;
-  }
-}
-
 .signUp .illustration {
   order: 2;
   justify-self: flex-end;
@@ -110,5 +78,13 @@ button:active {
   transform: scale(0.98);
 }
 form {
+  text-align: center;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  margin: 0 auto;
+}
+.login-link {
   text-align: center;
 }
